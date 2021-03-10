@@ -4,78 +4,198 @@
     margin: 0;
 }
 
-body {
-    background-color: slategray;
-}
-
-h1 {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2em;
-    padding: 10px;
-}
-
+/* ---------------header---------------- */
 
 header {
+    background-color: rgba(61, 65, 70, 0.473)
+}
+
+.header {
     display: flex;
-    flex-direction: row;
-    margin: 0% 0% 20px 0%;
-    background-color: Navy;
-    color: rgb(11, 145, 235)
+    flex-direction:row;
+}
+
+
+h1.name{
+    display: flex;
+    padding-left: 15px;
+    padding-top: 10px;
+    height: 50px;
+    justify-content: flex-start;
     }
 
-header nav {
+header .nav {
+    display: flex;
+    justify-content:flex-end;
+
+}    
+
+header .nav a {
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-decoration: none;
     list-style-type: none;
+    color:black
+}
+
+
+.hero {
+    display: block;
+    height: 200px;
+    width: 100%;
+    background-image: url("assets/hero_rocks.jpg")
+}
+
+
+
+/* ---------------article/about---------------- */
+
+.about {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top:15px;
+}
+
+.about .me2 {
+    
+    padding-right: 5%;
+    font-family: fantasy;
+    font-size: 2.5em;
 
 }
 
-article img {
-    width: 25%;
+.about p {
+    padding-top: 1%;
+    padding-right: 5%
 }
 
-article img .me{
-    max-width: 150px;
+img.me {
+    min-width: 300px;
+    height: 300px;
+    margin: 0 2% 2% 2%;
+}
 
+/* ---------------work---------------- */
+
+.card {
+    border:solid
+}
+
+.card1 {
+    display: flex;
+    flex-basis: auto;  
+}
+
+.work {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: 5%;
+    font-family: fantasy;
+    font-size: 2.5em;
+}
+
+.work h2 {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+
+.example {
+    max-width: fit-content;
+    flex-direction: column; 
+    padding-right: 5%;
+    text-align: center;  
+}
+
+img#week_1 {
+    max-width: 100%;
+    max-height: inherit;
 }
 
 .card {
-    border-style: solid;
-    border-width: 1px;
-    padding: 10px;
-    float: left;
-    width: 25%;
-}
-  
-.card header {
-    padding: 20px;
-}
-  
-.card p {
-    text-align: center;
+    margin-right: 25px;
 }
 
-.card img {
+.card2 img {
+    max-width: 90%;
+}
+
+
+/*---------------contact---------------- */
+
+#contact {
+    display: inline-flex;
+    flex-direction: row;
+    padding-right: 10%;
+
+    justify-content: flex-start;
+}
+
+.contact h2 {
+    justify-content: flex-start;
+    font-family: fantasy;
+    font-size: 2.5em;
+}
+
+
+.contact ul {
+    display: inline-flex;
+}
+
+
+.contact ul li {
+    Justify-content:center space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color:black
+}
+
+
+
+
+/*---------------footer---------------- */
+
+footer {
+    background-color: rgba(61, 65, 70, 0.473);
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+/*----- media query change width so they split on smaller displays-------*/
+
+@media screen and (max-width: 992px) {
+
+.card {
+    width:40%;  
+}
+    
+.about {
+    flex-direction: column;  
+}
+     
+.about img.me{
+    max-width:5%;       
+}
+
+.card1 {
+    flex-direction:column;
+}
+
+.div.card {
     width: 100%;
 }
 
 
-
-footer {
-    background-color: navy;
-    color: white;
-    text-align: center;
-}
-
-
-/* media query change width so they split on smaller displays*/
-@media screen and (max-width: 992px) {
-    .card {
-      width:50%;  
-    }
-  }
-  
+}  
   
   @media screen and (max-width: 768px) {
-    .card {
+.card {
       width:100%;
       }
    }

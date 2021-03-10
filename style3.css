@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-size: 100%;
+    background-image: url("assets/lake_superior_beach_rocks.JPG");   
+    
+}
+
+
+.header {
+    display:inline-flex;
+    justify-content:space-evenly;
+    text-decoration: none;
+    padding: 0px 4%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular'; 
+    font-size: 2.5rem;
+}   
+
+
+article .hello {
+    display: flex;
+    justify-content: row space-evenly;
+    height: 700px;
+    text-align: center;
+}
+
+.hello img{
+    flex-shrink: inherit;
+    max-width: 24%;
+}
+
+
+article h1 {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 5em;  
+    padding: 10px;
+    background-color: rgba(112, 128, 144, 0.37) ;
+    border:2px solid hsla(211, 13%, 32%, 0.37);
+    border-radius: 25px;
+}
+
+.name {
+    color: rgb(43, 43, 43);
+    font-family: cursive, serif;
+    font-size: 1.1em;
+}
+
+.about{
+    display: flex;
+    
+}
+
+
+.about p {
+    padding-top: 9%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
