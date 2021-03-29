@@ -1,77 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio: Joshua Alm</title>
-</head>
-<body>
-    <header>
-        <h1 class="name">Joshua Alm</h1> 
-            <nav class="nav">   
-            <a href="#about">About Me</a>
-            <a href="#work">Work</a>
-            <a href="#contact">Contact</a>
-            <a href="assets/joshua_alm_resume.pdf">Resume</a>
-        </nav>
-    </header>
-
-    <div class="hero"></div>     
-    
-    <article>
-        <section class="about">
-            <h2 class="me2" id="about">About Me</h2>
-            <img src="assets/me.png" alt="Joshua Alm" class="me">
-            <p>My technical career started in 2013 when I joined DecoPac, Inc. as a PhotoCake Level 2 Technician. In this role, I helped execute several process enhancements in both the office and warehouse. In the office I designed and implemented a digital troubleshooting guide that replaced the outdated and often incorrect paper copies that the PhotoCake Team had been using. In the warehouse, I designed and implemented a color coding structure (for the PhotoCake System build process) this helped streamline the process and ultimately cut time and reduced costs. In 2017, I moved from the PhotoCake department onto the Web Team as a Website Specialist. I joined the team in time to help finish preparing for the relaunch of DecoPac.com. In late 2019, I received a promotion to Customer Technology Solutions Analyst. In this role, I helped document both internal and external user stories which helped guide the path for the relaunch of Cakes.com. Working with our Developers is what sparked my interest in Web Development and programming.
-            </p>       
-        </section>
-
-        <div class="workCards">    
-            <section class="card1">
-                <h2 class="work" id="work">Work</h2>
-                <div class="example">
-                    <header>Week 1 - Code Refactor</header>
-                    <a href="https://jmalm79.github.io/code_refactor/"><img src="assets/screen_shot_josh_alm.jpg" id="week_1" alt="Code Refactor"></a>
-                </div>
-            <section class="card2">
-                <div class="card">
-                    <header>Week 2 - Coming Soon</header>
-                    <img src="assets/place_holder.jpg" id="week_2" alt="Code Refactor">
-                </div>
-                <div class="card">
-                    <header>Week 3 - Coming Soon</header>
-                    <img src="assets/place_holder.jpg" id="week_3" alt="Code Refactor">
-                </div>
-                <div class="card">
-                    <header>Week 4 - Coming Soon</header>
-                    <img src="assets/place_holder.jpg" id="week_4" alt="Code Refactor">
-                </div>
-            </section>
-            </section>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <title>Joshua M Alm Portfolio</title>
+  </head>
+  <body>
+      <header class="myHeader">
+        <h1 id="name">Joshua Alm</h1>
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="assets/joshua_alm_resume.pdf">Resume</a></li>
+          </ul>
+      </header>
+      
+      <div class="hero"></div>       
+        <main>
+          <div class="container-fluid aboutMe">
+            <div class="row">
+              <div class="col-lg-2 col-md-6 col-sm-12" >
+              <h2 class="me2" id="about">About Me</h2>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="assets/me.png" alt="Joshua Alm" class="me">
+              </div>
+              <div class="copy col-lg-7 col-md-10 col-sm-12">
+                <p>My technical career started in 2013 when I joined DecoPac, Inc. as a PhotoCake Level 2 Technician. In this role, I helped execute several process enhancements in both the office and warehouse. In the office I designed and implemented a digital troubleshooting guide that replaced the outdated and often incorrect paper copies that the PhotoCake Team had been using. In the warehouse, I designed and implemented a color coding structure (for the PhotoCake System build process) this helped streamline the process and ultimately cut time and reduced costs. In 2017, I moved from the PhotoCake department onto the Web Team as a Website Specialist. I joined the team in time to help finish preparing for the relaunch of DecoPac.com. In late 2019, I received a promotion to Customer Technology Solutions Analyst. In this role, I helped document both internal and external user stories which helped guide the path for the relaunch of Cakes.com. Working with our Developers is what sparked my interest in Web Development and programming.
+                </p>       
+              </div>
+            </div>
+          </div>  
+          
+          <div class="row allWork">
+            <div class="col-2">
+              <h2 class="work " id="work">Work</h2>
+            </div>
+          
+            <div class="col-10">
+              <header class="featuredWork">Group Project - Trip Planner</header>
+                <a href="https://jmalm79.github.io/group_project_1_roadtrippers/" target="_blank"><img src="assets/roadtrippers_group_project.jpg" id="week_1" alt="Code Refactor"></a>
+            </div>
+             
             
-
-        </div>    
-
-        <section class="contact">
-            <h2 id="contact">Contact</h2>
-                <ul>
-                    <li><a href="mailto:jmalm79@gmail.com">jmalm79@gmail.com</a></li>
-                    <li>Phone#: 651/325-6365</li>
-                    <li>LinkdIn: <a href="https://www.linkedin.com/in/joshua-alm-011687101">Joshua Alm</a> </li>
-                </ul>
-        </section>
+            <div class="row workCon"></div>
+              <div class="col-2">
+              </div>
+              
+              <div class="col-5">
+                <figure class="card secondCard">
+                  <header class="secondaryWork">Password Generator</header>
+                    <a href="https://jmalm79.github.io/password_generator/" target="_blank"><img src="assets/password_generator.jpg" id="week_2" alt="Password Generator image"></a>
+                </figure>
+              </div>  
+              
+              <div class="col-5">
+              <figure class="card secondCard">
+                <header class="secondaryWork">Weather Dashboard</header>
+                <a href="https://jmalm79.github.io/weather_dashboard/" target="_blank"><img src="assets/weather_dashboard.jpg" id="week_3" alt="Weather Dashboard"></a>
+              </figure>
+            </div>
+      </main>
 
     </article>
 
 
-    <footer>
-        <h3>Thank you for your consideration.</h3>
+      <footer>
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item"><a class="nav-link" href="mailto:jmalm79@gmail.com">jmalm79@gmail.com</a></li>
+          <li class="nav-item"><a class="nav-link">Phone#: 651/325-6365</li>
+          <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/joshua-alm-011687101">Joshua Alm</a></li>
+          <li class="nav-item"><a class="nav-link" href="assets/joshua_alm_resume.pdf">Resume</a></li>
+        </ul>    
 
-    </footer>
-
-
-
-</body>
+      </footer>
+  </body>
 </html>

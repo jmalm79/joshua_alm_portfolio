@@ -1,202 +1,117 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 /* ---------------header---------------- */
 
-header {
-    background-color: rgba(61, 65, 70, 0.473)
+.myHeader {
+    background-image: url("assets/hero_rocks.jpg");
+    font-family: cursive;
+    font-size:1.5em;
+     text-shadow: 2px 2px 8px white;
 }
 
-.header {
-    display: flex;
-    flex-direction:row;
-}
 
 
-h1.name{
-    display: flex;
-    padding-left: 15px;
-    padding-top: 10px;
-    height: 50px;
-    justify-content: flex-start;
+#name{
+    padding-left: 35px;
+    padding-top: 15px;
     }
 
-header .nav {
-    display: flex;
-    justify-content:flex-end;
-
-}    
-
 header .nav a {
-    justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-decoration: none;
-    list-style-type: none;
-    color:black
+    color:black;
+     text-shadow: 0 0px 10px grey;
 }
 
-
-.hero {
-    display: block;
-    height: 200px;
-    width: 100%;
-    background-image: url("assets/hero_rocks.jpg")
+li.nav-item{
+    margin: 1% 2% 0 2%;
+    border-top:solid;
+    border-bottom:solid;
+    border-radius: 30px;
+    background-color:white;
 }
-
-
 
 /* ---------------article/about---------------- */
 
-.about {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-top:15px;
+.aboutMe{
+    margin-top: 5%;
 }
 
-.about .me2 {
-    
-    padding-right: 5%;
+
+#about {
+    font-family: cursive;
+    font-size: 2.5em;
+}
+
+#about .me2 {
     font-family: fantasy;
     font-size: 2.5em;
 
 }
 
-.about p {
+div.copy{
+    padding-right: 65px;
+}
+
+
+#about p {
     padding-top: 1%;
-    padding-right: 5%
 }
 
 img.me {
-    min-width: 300px;
-    height: 300px;
-    margin: 0 2% 2% 2%;
+    min-width: 400px;
+    height: 400px;
+    filter: drop-shadow(10px 5px 3px);
 }
 
 /* ---------------work---------------- */
 
-.card {
-    border:solid
+div.row.allWork{
+    margin-top: 5%;
+}
+div.row.allWork header{
+    background-color: darkgray;
+    font-family:cursive;
+    font-size:1.5em;
 }
 
-.card1 {
-    display: flex;
-    flex-basis: auto;  
-}
 
 .work {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-right: 5%;
-    font-family: fantasy;
+    font-family:cursive;
     font-size: 2.5em;
 }
 
-.work h2 {
-    padding-right: 5%;
-    padding-left: 5%;
-}
-
-
-.example {
-    max-width: fit-content;
-    flex-direction: column; 
-    padding-right: 5%;
-    text-align: center;  
-}
 
 img#week_1 {
     max-width: 100%;
     max-height: inherit;
+
 }
 
-.card {
-    margin-right: 25px;
+figure.card.col-3.moreWork{
+    margin: 1%;
 }
 
-.card2 img {
-    max-width: 90%;
+img#week_2 {
+    max-width: 100%;
+    max-height: inherit;
 }
 
-
-/*---------------contact---------------- */
-
-#contact {
-    display: inline-flex;
-    flex-direction: row;
-    padding-right: 10%;
-
-    justify-content: flex-start;
+img#week_3 {
+    max-width: 100%;
+    max-height: inherit;
 }
 
-.contact h2 {
-    justify-content: flex-start;
-    font-family: fantasy;
-    font-size: 2.5em;
+.secondCard{
+    justify-content: space-evenly;
 }
 
-
-.contact ul {
-    display: inline-flex;
+body > main > div.row.allWork > div.row.workCon{
+    margin-top:2%
 }
-
-
-.contact ul li {
-    Justify-content:center space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-decoration: none;
-    list-style-type: none;
-    color:black
-}
-
-
-
 
 /*---------------footer---------------- */
 
 footer {
-    background-color: rgba(61, 65, 70, 0.473);
-    text-align: center;
-    bottom: 0;
-    width: 100%;
-}
-
-/*----- media query change width so they split on smaller displays-------*/
-
-@media screen and (max-width: 992px) {
-
-.card {
-    width:40%;  
-}
+    background-image: url("assets/hero_rocks.jpg");
+    font-family: cursive;
+    font-size:1.5em;
+    text-shadow: 2px 2px 8px white;
     
-.about {
-    flex-direction: column;  
 }
-     
-.about img.me{
-    max-width:5%;       
-}
-
-.card1 {
-    flex-direction:column;
-}
-
-.div.card {
-    width: 100%;
-}
-
-
-}  
-  
-  @media screen and (max-width: 768px) {
-.card {
-      width:100%;
-      }
-   }
-  
