@@ -51,13 +51,19 @@ div.copy{
 
 
 #about p {
+    position: absolute;
     padding-top: 1%;
 }
 
 img.me {
-    min-width: 400px;
-    height: 400px;
+    /* min-width: 400px;
+    height: 400px; */
     filter: drop-shadow(10px 5px 3px);
+}
+
+.responsive {
+    max-width: 100% !important;
+    height: auto !important;
 }
 
 /* ---------------work---------------- */
@@ -114,4 +120,8 @@ footer {
     font-size:1.5em;
     text-shadow: 2px 2px 8px white;
     
+}
+
+.nav-link {
+    display: inline;
 }
